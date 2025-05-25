@@ -7,19 +7,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 import jakarta.validation.Valid;
+
 import java.util.List;
 
 @CrossOrigin(
         origins = "http://localhost:5173",
-        methods = {
-                RequestMethod.GET,
-                RequestMethod.POST,
-                RequestMethod.PUT,
-                RequestMethod.DELETE,
-                RequestMethod.PATCH
-        },
-        allowCredentials = true
+        allowCredentials = "true"
 )
 @RestController
 @RequestMapping("/api/productos")
