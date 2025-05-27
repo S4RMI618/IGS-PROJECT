@@ -14,7 +14,7 @@ export const fetchLowStock       = nivel => api.get('/productos/alerta-stock', {
 export const createProducto      = data => api.post('/productos', data);
 export const updateProducto      = (id, data) => api.put(`/productos/${id}`, data);
 export const adjustStock         = (id, delta) => api.patch(`/productos/${id}/stock`, null, { params: { cantidadDelta: delta } });
-
+export const deleteProducto      = id => api.delete(`/productos/${id}`);
 // Categorías, Labs, Distribuidores (similares)
 export const fetchCategorias     = () => api.get('/categorias');
 export const fetchLaboratorios   = () => api.get('/laboratorios');

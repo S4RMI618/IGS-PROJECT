@@ -36,17 +36,31 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #4f46e5;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #a1a1a1;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+/* .list-productos button {
+  all: unset; 
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4f46e5; 
+  transition: background-color 0.3s;
+}
+
+.list-productos button:hover {
+  background-color: #4338ca; 
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

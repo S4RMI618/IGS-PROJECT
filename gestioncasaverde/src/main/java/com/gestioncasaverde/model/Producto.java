@@ -2,6 +2,8 @@ package com.gestioncasaverde.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "producto")
 @Data @NoArgsConstructor @AllArgsConstructor
@@ -32,4 +34,7 @@ public class Producto {
 
     @Column(nullable = false)
     private Integer stock = 0;
+
+    @Column(name = "precio_unitario", nullable = false)
+    private BigDecimal precioUnitario;
 }
