@@ -10,7 +10,7 @@ function App() {
   return (
     <main className=" h-screen w-full">
       <BrowserRouter>
-        <Navbar />
+        <Navbar />  
         <Routes>
           <Route path="/movimientos" element={<MovimientosPage />} />
           <Route path="/productos" element={<ListProductos />} />
