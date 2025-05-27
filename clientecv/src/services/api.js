@@ -21,6 +21,7 @@ export const fetchLaboratorios   = () => api.get('/laboratorios');
 export const fetchDistribuidores = () => api.get('/distribuidores');
 
 // Movimientos
+export const createMovimiento      = data => api.post('/movimientos', data);
 export const fetchMovimientos        = () => api.get('/movimientos');
 export const fetchMovimientosByProd  = prodId => api.get(`/movimientos/producto/${prodId}`);
 export const registerMovimiento      = data => api.post('/movimientos', data);
